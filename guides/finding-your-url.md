@@ -1,6 +1,5 @@
 ---
 description: Your webhook url is where Top.gg sends vote information to.
-layout: editorial
 ---
 
 # Finding your URL
