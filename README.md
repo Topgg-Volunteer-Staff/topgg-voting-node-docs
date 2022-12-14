@@ -24,6 +24,8 @@ yarn add @top-gg/voting-sdk
 
 Once you've installed the library you can start adding code!
 
+
+{% tabs %} {% tab title="CommonJS" %}
 ```javascript
 const { VotingSDK } = require('@top-gg/voting-sdk');
 
@@ -37,6 +39,23 @@ const topgg = new VotingSDK("authorization", {
 // Initilize the databases and starts the webhook listener
 await topgg.init();
 ```
+{% endtab %}
+
+{% tab title="ESM Module" %}
+```javascript
+import { VotingSDK } from '@top-gg/voting-sdk';
+
+// Setup the votingSDK for receiving webhooks
+// Make sure to set your authorization to something unique!
+const topgg = new VotingSDK("authorization", {
+    port: 3000,
+    path: "/topggwebhook"
+});
+
+// Initilize the databases and starts the webhook listener
+await topgg.init();
+```
+{% endtab %} {% endtabs %}
 
 ## Configuring Top.gg
 
