@@ -45,7 +45,7 @@ In order for Topgg to know where to send webhooks you'll need to do some configu
 \
 
 
-<figure><img src="https://i.imgur.com/7ZlJEo6.png" alt=""><figcaption><p>Edit webhooks</p></figcaption></figure>
+<figure><img src="https://i.imgur.com/4Z4FWZT.png" alt=""><figcaption><p>Edit webhooks</p></figcaption></figure>
 
 ### The Authorization
 
