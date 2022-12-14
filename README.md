@@ -41,8 +41,7 @@ await topgg.init();
 ## Configuring Topgg
 
 In order for Topgg to know where to send webhooks you'll need to do some configuring. You can find the webhooks page on your bot/servers edit page, in the webhook section.\
-[You can see your listed bots/servers here](https://top.gg/user/me).\
-
+[You can see your listed bots/servers here](https://top.gg/user/me).
 
 <figure><img src="https://i.imgur.com/4Z4FWZT.png" alt=""><figcaption><p>Edit webhooks</p></figcaption></figure>
 
