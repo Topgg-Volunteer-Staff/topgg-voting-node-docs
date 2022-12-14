@@ -4,7 +4,7 @@ description: Webhooks require special considerations when running them from a ho
 
 # Running webhooks from home
 
-Webhooks will require the ability for Topgg to be able to reach your computer via http requests. Since your home network isn't quite setup in the same way as a VPS or other hosts it will require some special configuration.
+Webhooks will require the ability for Top.gg to be able to reach your computer via http requests. Since your home network isn't quite setup in the same way as a VPS or other hosts it will require some special configuration.
 
 ### Port forwarding
 

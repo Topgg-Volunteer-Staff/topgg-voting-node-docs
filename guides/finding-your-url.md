@@ -1,5 +1,5 @@
 ---
-description: Your webhook url is where Topgg sends vote information to.
+description: Your webhook url is where Top.gg sends vote information to.
 layout: editorial
 ---
 
@@ -34,8 +34,8 @@ The post and path is something you set in code.
 ```javascript
 const topgg = new VotingSDK("SomeSuperSecretAuth!", {
   port: 3000,
-  path: "/topggwebhook"
-})
+  path: "/topggwebhook",
+});
 ```
 
 By default the VotingSDK will set the port to 3000 and the path to "/topggwebhook".\

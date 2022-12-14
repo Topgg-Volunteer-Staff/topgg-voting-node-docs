@@ -7,7 +7,7 @@ description: Enabling reminders & following Top.gg guidelines
 <figure><img src="https://i.imgur.com/mT2HHLw.png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="danger" %}
-Topgg has some guidelines for [voting reminders](https://support.top.gg/support/solutions/articles/73000502502-bot-guidelines). It's important to make sure you follow them. If you are sending reminder notifications you **MUST** include how to **opt out** of voting reminders in the message.
+Top.gg has some guidelines for [voting reminders](https://support.top.gg/support/solutions/articles/73000502502-bot-guidelines). It's important to make sure you follow them. If you are sending reminder notifications you **MUST** include how to **opt out** of voting reminders in the message.
 {% endhint %}
 
 ## Enabling reminders
@@ -50,14 +50,14 @@ If you don't want this to happen make sure to catch all potential errors!
 The below code will watch for button presses with the custom IDs "disablereminders" & "enablereminders". If a user interacts with either it will disable/enable reminders for the user.
 
 ```javascript
-client.on(Events.InteractionCreate, async interaction => {
+client.on(Events.InteractionCreate, async (interaction) => {
   if (!interaction.isButton()) return;
   if (interaction.customId === "disablereminders") {
     await topgg.optOut(interaction.user.id);
-    interaction.reply("Reminders have been disabled!")
+    interaction.reply("Reminders have been disabled!");
   } else if (interaction.customId === "enablereminders") {
     await topgg.optIn(interaction.user.id);
-    interaction.reply("Reminders have been enabled!")
+    interaction.reply("Reminders have been enabled!");
   }
-})
+});
 ```

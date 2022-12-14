@@ -14,22 +14,20 @@ HTTP is primarily two things, **requests** and **responses**. \
 The request is a way for the client to get information or provide information.\
 The response is the way the server responds, either containing the data requested, or a response to the new information(or an error message!).
 
-## How do Topgg's webhooks work?
+## How do Top.gg's webhooks work?
 
 When your bot or Discord server receives a vote we will send a HTTP request to the URL you have on the edit page of your bot or server.
 
 {% hint style="warning" %}
-The URL cannot be a Discord webhook URL, Topgg webhooks are not directly compatible with Discord webhooks!
+The URL cannot be a Discord webhook URL, Top.gg webhooks are not directly compatible with Discord webhooks!
 {% endhint %}
 
 You can find out more about [finding your URL here](../guides/finding-your-url.md).
 
+In the request Top.gg sends to you it will include several things.\
+The most important is the authorization header. The authorization header can be thought of like a password between Top.gg and your webhook. The only time your webhook will accept a request is if the password is correct. You'll be the one deciding the authorization so make sure its secure, and don't share it with anyone!
 
-
-In the request Topgg sends to you it will include several things.\
-The most important is the authorization header. The authorization header can be thought of like a password between Topgg and your webhook. The only time your webhook will accept a request is if the password is correct. You'll be the one deciding the authorization so make sure its secure, and don't share it with anyone!
-
-## Other information Topgg will send
+## Other information Top.gg will send
 
 | Field        | Type      | Description                                                                                         |
 | ------------ | --------- | --------------------------------------------------------------------------------------------------- |
