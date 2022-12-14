@@ -1,6 +1,6 @@
 # Receiving Votes
 
-<figure><img src="https://i.imgur.com/3QKgFcA.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://i.imgur.com/PqEfe8A.png" alt=""><figcaption></figcaption></figure>
 
 Once you've configured Top.gg and add the library to your code you can start receiving test votes and votes!\
 \
