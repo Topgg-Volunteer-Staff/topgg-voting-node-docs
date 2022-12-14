@@ -38,20 +38,20 @@ const topgg = new VotingSDK("authorization", {
 await topgg.init();
 ```
 
-## Configuring Topgg
+## Configuring Top.gg
 
-In order for Topgg to know where to send webhooks you'll need to do some configuring. You can find the webhooks page on your bot/servers edit page, in the webhook section.\
+In order for Top.gg to know where to send webhooks you'll need to do some configuring. You can find the webhooks page on your bot/servers edit page, in the webhook section.\
 [You can see your listed bots/servers here](https://top.gg/user/me).
 
 <figure><img src="https://i.imgur.com/4Z4FWZT.png" alt=""><figcaption><p>Edit webhooks</p></figcaption></figure>
 
 ### The Authorization
 
-The authorization is like a password. Topgg will include it in all webhook requests, this library will check the authorization Topgg sends to make sure its the same as the one you have in code. It can be anything you want, but it must be the same between Topgg and your code!
+The authorization is like a password. Top.gg will include it in all webhook requests, this library will check the authorization Top.gg sends to make sure its the same as the one you have in code. It can be anything you want, but it must be the same between Top.gg and your code!
 
 ### The webhook URL
 
-The webhook URL will depend on your host, and the settings you use with the library.\
+The webhook URL will depend on your host, and the settings you use with the library.
 You can find out more on the ["Finding your URL" guide](guides/finding-your-url.md).
 
 {% hint style="warning" %}
